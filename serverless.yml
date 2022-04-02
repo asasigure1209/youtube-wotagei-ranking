@@ -4,6 +4,8 @@ service: wotagei-ranking
 
 frameworkVersion: "3"
 
+useDotenv: true
+
 custom:
   tableName: "wotagei-ranking-${sls:stage}"
 
@@ -15,6 +17,8 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    environment:
+      YOUTUBE_DATA_API_KEY: ${env:YOUTUBE_DATA_API_KEY}
 
 resources:
   Resources:
