@@ -1,0 +1,10 @@
+{
+  "name": "youtube-wotagei-ranking",
+  "version": "1.0.0",
+  "description": "",
+  "author": "asasigure <mkmokymh@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^12.0.3"
+  }
+}
